@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #125aa3;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+table.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.employee-table th {
+  background: #eeeeee;
+}
+
+.employee-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions svg {
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.actions svg:hover {
+  transform: scale(1.1);
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 15px 0 25px 0;
+  justify-content: center;
+}
+
+.filters-container input,
+.filters-container select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filters-container input:focus,
+.filters-container select:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+.filters-container select {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.filters-container input[type="number"] {
+  width: 120px;
+}
+
+.filters-container input[placeholder*="Search"] {
+  width: 180px;
+}
+
+.filters-container input[placeholder*="Department"] {
+  width: 150px;
+}
+
+.filters-container select {
+  width: 160px;
+}
+
+.filters-container svg {
+  cursor: pointer;
+  color: #d32f2f;
+  transition: transform 0.15s, color 0.15s;
+}
+
+.filters-container svg:hover {
+  transform: scale(1.2);
+  color: #ff5252;
+}
